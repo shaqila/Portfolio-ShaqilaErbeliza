@@ -2,6 +2,7 @@ import CardComponent from "../Card";
 import jobHuntImg from "../../../assets/portfolio/jobhunt.png";
 import inGigsImg from "../../../assets/portfolio/ingigs.png";
 import elearningImg from "../../../assets/portfolio/elearning.png";
+import newsImg from "../../../assets/portfolio/newsletter.png";
 
 const PortfolioComponent = () => {
   return (
@@ -33,6 +34,13 @@ const PortfolioComponent = () => {
         description="This is e-learning website project with my friends, i did the slicing design from Figma to JS with MinimalUI."
         thumbnail={elearningImg}
         view={elearningImg}
+      />
+      <CardComponent
+        title="Newsletter SignUp"
+        tools="Reactjs, Tailwind"
+        description="This is e-learning website project with my friends, i did the slicing design from Figma to JS with MinimalUI."
+        thumbnail={newsImg}
+        view={"https://newsletter-signup-erbeliza.vercel.app/"}
       />
     </div>
   );
