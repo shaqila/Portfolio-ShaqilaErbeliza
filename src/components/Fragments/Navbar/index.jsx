@@ -3,12 +3,20 @@ import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { FaTimes } from "react-icons/fa";
+import { Link, NavLink } from "react-router-dom";
 
 const NavbarComponent = () => {
   const [showMenu, setShowMenu] = useState(false);
 
   const toggleMenu = () => {
     setShowMenu(!showMenu);
+  };
+
+  const handleScrollToSection = (sectionId) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
   };
 
   return (
@@ -33,17 +41,18 @@ const NavbarComponent = () => {
           </div>
           <div className="hidden lg:flex space-x-8 font-semibold">
             {[
-              ["About", "/"],
-              ["Projects", "/"],
-              ["Contacts", "/"],
-            ].map(([title, url]) => (
-              <a
+              ["Home", "home"],
+              ["About", "about"],
+              ["Projects", "portfolio"],
+              ["Contacts", "contacts"],
+            ].map(([title, sectionId]) => (
+              <span
                 key={title}
-                href={url}
-                className="rounded-lg px-3 py-2 my-auto text-slate-800 font-bold hover:text-slate-700 hover:-translate-y-0.5 duration-75"
+                onClick={() => handleScrollToSection(sectionId)}
+                className="rounded-lg px-3 py-2 my-auto text-slate-800 font-bold hover:text-slate-700 hover:-translate-y-0.5 duration-75 cursor-pointer"
               >
-                {title}
-              </a>
+                <Link to={`/${sectionId}`}>{title}</Link>
+              </span>
             ))}
           </div>
         </div>
@@ -54,13 +63,13 @@ const NavbarComponent = () => {
               ["Projects", "/"],
               ["Contacts", "/"],
             ].map(([title, url]) => (
-              <a
+              <Link
                 key={title}
-                href={url}
+                to={url}
                 className="rounded-lg block px-3 py-2 my-auto text-slate-800 font-bold hover:text-slate-700 hover:-translate-y-0.5 duration-75"
               >
                 {title}
-              </a>
+              </Link>
             ))}
           </div>
         )}

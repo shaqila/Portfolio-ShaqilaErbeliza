@@ -2,13 +2,13 @@ import illustration_hero from "../../../assets/illustration_hero.svg";
 import { LuGithub, LuGitlab } from "react-icons/lu";
 import { FiLinkedin } from "react-icons/fi";
 
-const greeting = {
-  grand: "Frontend Developer",
-  title: "Shaqila Erbeliza",
-  subTitle:
-    "A Bachelor of Information Systems who is interested and passionate about programming. Has a good understanding of system security, business process analysis, web development, and database management. Having expertise in JavaScript and PHP programming languages with ReactJS and Laravel frameworks, as well as familiarity with HTML, CSS, JavaScript, and Query. In addition, I am an individual who has good analytical and interpersonal skills.",
-};
 const HeroComponent = () => {
+  const greeting = {
+    grand: "Frontend Developer",
+    title: "Shaqila Erbeliza",
+    subTitle:
+      "A Bachelor of Information Systems who is interested and passionate about programming. Has a good understanding of system security, business process analysis, web development, and database management. Having expertise in JavaScript and PHP programming languages with ReactJS and Laravel frameworks, as well as familiarity with HTML, CSS, JavaScript, and Query. In addition, I am an individual who has good analytical and interpersonal skills.",
+  };
   const links = [
     {
       title: "Github",
@@ -29,7 +29,7 @@ const HeroComponent = () => {
 
   return (
     <>
-      <div className="w-full px-5 py-10 mx-auto lg:w-5/6">
+      <div id="home" className="w-full px-5 py-10 mx-auto lg:w-5/6">
         <div className="flex flex-col-reverse items-center justify-center lg:flex-row lg:justify-between">
           <div className="w-full max-w-xl text-center my-10 lg:text-left lg:w-auto">
             <div className="text-lg font-semibold text-[#585858]">
