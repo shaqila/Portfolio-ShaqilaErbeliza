@@ -12,13 +12,6 @@ const NavbarComponent = () => {
     setShowMenu(!showMenu);
   };
 
-  const handleScrollToSection = (sectionId) => {
-    const element = document.getElementById(sectionId);
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
-    }
-  };
-
   return (
     <nav className="p-4 sticky top-0 z-10 backdrop-filter backdrop-blur-lg bg-opacity-50">
       <div className="max-w-6xl mx-auto">
@@ -41,18 +34,17 @@ const NavbarComponent = () => {
           </div>
           <div className="hidden lg:flex space-x-8 font-semibold">
             {[
-              ["Home", "home"],
-              ["About", "about"],
-              ["Projects", "portfolio"],
-              ["Contacts", "contacts"],
-            ].map(([title, sectionId]) => (
-              <span
+              ["About", "/"],
+              ["Projects", "#projects"],
+              ["Contacts", "/"],
+            ].map(([title, url]) => (
+              <Link
                 key={title}
-                onClick={() => handleScrollToSection(sectionId)}
-                className="rounded-lg px-3 py-2 my-auto text-slate-800 font-bold hover:text-slate-700 hover:-translate-y-0.5 duration-75 cursor-pointer"
+                to={url}
+                className="rounded-lg px-3 py-2 my-auto text-slate-800 font-bold hover:text-slate-700 hover:-translate-y-0.5 duration-75"
               >
-                <Link to={`/${sectionId}`}>{title}</Link>
-              </span>
+                {title}
+              </Link>
             ))}
           </div>
         </div>

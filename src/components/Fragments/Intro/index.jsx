@@ -29,7 +29,7 @@ const HeroComponent = () => {
 
   return (
     <>
-      <div id="home" className="w-full px-5 py-10 mx-auto lg:w-5/6">
+      <div className="w-full px-5 py-10 mx-auto lg:w-5/6">
         <div className="flex flex-col-reverse items-center justify-center lg:flex-row lg:justify-between">
           <div className="w-full max-w-xl text-center my-10 lg:text-left lg:w-auto">
             <div className="text-lg font-semibold text-[#585858]">
