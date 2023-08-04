@@ -7,7 +7,7 @@ const HeroComponent = () => {
     grand: "Frontend Developer",
     title: "Shaqila Erbeliza",
     subTitle:
-      "A Bachelor of Information Systems who is interested and passionate about programming. Has a good understanding of system security, business process analysis, web development, and database management. Having expertise in JavaScript and PHP programming languages with ReactJS and Laravel frameworks, as well as familiarity with HTML, CSS, JavaScript, and Query. In addition, I am an individual who has good analytical and interpersonal skills.",
+      "A Bachelor of Information Systems who is interested and passionate about programming and design. Has a good understanding of web development, database management, business process analysis, and system security. Having expertise in JavaScript and PHP programming languages with ReactJS and Laravel frameworks. In addition, I am an individual who has good analytical and interpersonal skills.",
   };
   const links = [
     {

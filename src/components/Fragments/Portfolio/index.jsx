@@ -7,9 +7,12 @@ import newsImg from "../../../assets/portfolio/newsletter.png";
 const PortfolioComponent = () => {
   return (
     <div className="container max-w-5xl mx-auto flex flex-wrap py-20 overflow-hidden justify-center items-center gap-10">
-      <div id="projects" className="text-center mx-12 md:mx-auto">
-        <div className="text-4xl font-semibold">Projects</div>
-        <div>
+      <div
+        id="projects"
+        className="text-center text-slate-800 mx-12 md:mx-auto"
+      >
+        <div className="text-4xl font-bold">Projects</div>
+        <div className="md:mx-20  mt-5">
           Discover a curated selection of my finest projects, each displayed in
           this showcase, highlighting my exceptional skills and innovation.
         </div>

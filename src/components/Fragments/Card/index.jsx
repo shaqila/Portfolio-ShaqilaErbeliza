@@ -41,12 +41,12 @@ const CardComponent = ({ title, tools, description, thumbnail, view }) => {
         </div>
         <div className="w-[50%] flex flex-col h-full justify-between md:py-8 md:px-5 p-2">
           <div>
-            <div className="md:text-3xl font-bold">{title}</div>
+            <div className="md:text-3xl text-slate-800 font-bold">{title}</div>
             <div className="md:text-lg text-xs text-slate-500">{tools}</div>
           </div>
           <div className="items-end min-h-0">
             {/* <div className="text-xs md:text-sm md:my-4 my-2">{description}</div> */}
-            <div className="text-xs md:text-sm md:my-4 my-2 overflow-y-auto max-h-[4rem]">
+            <div className="text-xs text-slate-800 md:text-sm md:my-4 my-2 overflow-y-auto max-h-[4rem]">
               {description}
             </div>
             <a
