@@ -12,7 +12,7 @@ const PortfolioComponent = () => {
         className="text-center text-slate-800 mx-12 md:mx-auto"
       >
         <div className="text-4xl font-bold">Projects</div>
-        <div className="md:mx-20  mt-5">
+        <div className="md:mx-20 mt-5">
           Discover a curated selection of my finest projects, each displayed in
           this showcase, highlighting my exceptional skills and innovation.
         </div>

@@ -45,7 +45,6 @@ const CardComponent = ({ title, tools, description, thumbnail, view }) => {
             <div className="md:text-lg text-xs text-slate-500">{tools}</div>
           </div>
           <div className="items-end min-h-0">
-            {/* <div className="text-xs md:text-sm md:my-4 my-2">{description}</div> */}
             <div className="text-xs text-slate-800 md:text-sm md:my-4 my-2 overflow-y-auto max-h-[4rem]">
               {description}
             </div>
