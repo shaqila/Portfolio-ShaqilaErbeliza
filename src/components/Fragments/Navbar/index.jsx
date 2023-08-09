@@ -34,9 +34,10 @@ const NavbarComponent = () => {
           </div>
           <div className="hidden lg:flex space-x-8 font-semibold">
             {[
-              ["About", "/"],
+              ["Home", "/"],
+              ["Skills", "/skills"],
               ["Projects", "/projects"],
-              ["Contacts", "/"],
+              ["Contacts", "/contact"],
             ].map(([title, url]) => (
               <Link
                 key={title}
@@ -51,9 +52,10 @@ const NavbarComponent = () => {
         {showMenu && (
           <div className="lg:hidden mt-4 font-semibold">
             {[
-              ["About", "/"],
+              ["Home", "/"],
+              ["Skills", "/skills"],
               ["Projects", "/projects"],
-              ["Contacts", "/"],
+              ["Contacts", "/contact"],
             ].map(([title, url]) => (
               <Link
                 key={title}
