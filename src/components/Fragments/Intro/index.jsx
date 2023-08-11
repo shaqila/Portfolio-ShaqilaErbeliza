@@ -57,19 +57,20 @@ const HeroComponent = () => {
         <div className="text-lg font-semibold text-[#585858]">
           {greeting.grand}
         </div>
-        <div className="text-5xl mb-4 font-bold text-slate-800">
-          Hello, my name is {greeting.title}
+        <div className="text-5xl my-5 font-bold text-slate-800">
+          {greeting.title}
         </div>
         <div className="my-2 text-lg font-normal text-[#585858]">
           {greeting.subTitle}
         </div>
         <div className="my-7 flex flex-col items-center justify-center space-y-5 md:flex-row md:justify-center md:items-center md:space-y-0 md:space-x-5 lg:justify-start">
-          <button
-            type="submit"
+          <a
+            href="/resume_shaqilaerbeliza.pdf"
+            target="_blank"
             className="text-slate-800 font-bold py-1 px-3 border-2 border-slate-800 rounded-lg hover:shadow-md hover:-translate-y-1 hover:bg-blue-100 hover:border-blue-100 duration-75"
           >
             Resume
-          </button>
+          </a>
           <div className="flex w-fit text-slate-800 bg-blue-100 font-bold py-2 px-5 rounded-lg space-x-4">
             {links.map(({ title, icon, url }) => (
               <div key={url} className="relative group">

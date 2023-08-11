@@ -13,20 +13,7 @@ export const HomeMotion = {
       duration: 1.2,
     },
   },
-  wrapImg: {
-    initial: {
-      borderEndEndRadius: "100px",
-      borderStartStartRadius: "100px",
-    },
-    animated: {
-      borderEndEndRadius: "500px",
-      borderStartStartRadius: "500px",
-    },
-    transition: {
-      delay: 0.3,
-      duration: 0.5,
-    },
-  },
+
   image: {
     initial: {
       opacity: 0,

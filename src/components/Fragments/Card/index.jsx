@@ -31,7 +31,7 @@ const CardComponent = ({ title, tools, description, thumbnail, view }) => {
     //   </div>
     // </div>
     <div className="flex w-[85%] justify-center items-center">
-      <div className="relative w-full h-44 md:h-80 bg-whites rounded-2xl overflow-hidden shadow-xl border-t cursor-pointer group transition-all mx-auto flex">
+      <div className="relative w-full h-44 md:h-80 bg-whites rounded-2xl overflow-hidden shadow-xl border-t group transition-all mx-auto flex">
         <div className="w-[50%]">
           <img
             src={thumbnail}
@@ -44,20 +44,20 @@ const CardComponent = ({ title, tools, description, thumbnail, view }) => {
             <div className="md:text-3xl text-slate-800 font-bold">{title}</div>
             <div className="md:text-lg text-xs text-slate-500">{tools}</div>
           </div>
-          <div className="items-end min-h-0">
-            <div className="text-xs text-slate-800 md:text-sm md:my-4 my-2 overflow-y-auto max-h-[4rem]">
+          <div className="items-end min-h-0 md:h-[50%]">
+            <div className="text-xs overflow-y-auto text-slate-800 md:text-lg md:my-4 my-2 max-h-[4rem]">
               {description}
             </div>
-            <a
-              type="submit"
-              className="text-slate-800 mx-auto w-fit block md:ml-0 text-xs md:text-base font-bold md:px-3 p-1 border md:border-2 border-slate-800 rounded-full hover:shadow-md hover:-translate-y-1 hover:bg-blue-100 hover:border-blue-100 duration-75"
-              href={view}
-              target="_blank"
-              rel="noreferrer"
-            >
-              View Project
-            </a>
           </div>
+          <a
+            type="submit"
+            className="text-slate-800 mx-auto w-fit block md:ml-0 text-xs md:text-base font-bold md:px-3 p-1 border md:border-2 border-slate-800 rounded-full hover:shadow-md hover:-translate-y-1 hover:bg-blue-100 hover:border-blue-100 duration-75"
+            href={view}
+            target="_blank"
+            rel="noreferrer"
+          >
+            View Project
+          </a>
         </div>
       </div>
     </div>

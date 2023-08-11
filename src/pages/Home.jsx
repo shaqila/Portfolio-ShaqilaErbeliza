@@ -1,7 +1,11 @@
 import HeroComponent from "../components/Fragments/Intro";
 
 const HomePage = () => {
-  return <HeroComponent />;
+  return (
+    <div>
+      <HeroComponent />
+    </div>
+  );
 };
 
 export default HomePage;

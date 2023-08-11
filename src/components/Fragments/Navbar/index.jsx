@@ -16,9 +16,9 @@ const NavbarComponent = () => {
     <nav className="p-4 sticky top-0 z-10 backdrop-filter backdrop-blur-lg bg-opacity-50">
       <div className="max-w-6xl mx-auto">
         <div className="flex justify-between">
-          <div className="text-slate-800 font-bold text-xl my-auto">
+          <Link to={"/"} className="text-slate-800 font-bold text-2xl my-auto">
             Shaqila E.
-          </div>
+          </Link>
           <div className="lg:hidden mt-2">
             <motion.button
               onClick={toggleMenu}
@@ -35,7 +35,7 @@ const NavbarComponent = () => {
           <div className="hidden lg:flex space-x-8 font-semibold">
             {[
               ["Home", "/"],
-              ["Skills", "/skills"],
+              ["Techstack", "/techstack"],
               ["Projects", "/projects"],
               ["Contacts", "/contact"],
             ].map(([title, url]) => (
@@ -53,7 +53,7 @@ const NavbarComponent = () => {
           <div className="lg:hidden mt-4 font-semibold">
             {[
               ["Home", "/"],
-              ["Skills", "/skills"],
+              ["Techstack", "/techstack"],
               ["Projects", "/projects"],
               ["Contacts", "/contact"],
             ].map(([title, url]) => (

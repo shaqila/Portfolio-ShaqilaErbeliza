@@ -4,21 +4,20 @@ import { Link } from "react-router-dom";
 
 export const ContactCard = ({ icon, name, description, link }) => {
   return (
-    <motion.div className="flex items-center space-x-4 w-full md:w-max min-w-[300px] p-4 rounded-xl shadow-lg bg-slate-200">
-      <div className="w-20 h-20">{icon}</div>
-      <div className="flex flex-col space-y-2 items-start text-slate-800 text-sm font-bold">
-        <div>
-          <h2 className="text-lg font-bold ">{name}</h2>
-          <span>{description}</span>
+    <motion.div
+      className="flex overflow-hidden items-center space-x-4 w-full p-4 rounded-xl backdrop-filter backdrop-blur-sm bg-opacity-0 border border-gray-100 shadow-md"
+      whileTap={{ scale: 0.9 }}
+      whileHover={{ scale: 1.1 }}
+    >
+      <div>{icon}</div>
+      <Link to={link} target="_blank">
+        <div className="flex flex-col space-y-2 items-start text-slate-800 text-xs font-light md:font-semibold md:text-md">
+          <div>
+            <h2 className="font-bold ">{name}</h2>
+            <span>{description}</span>
+          </div>
         </div>
-        <Link
-          to={link}
-          target="_blank"
-          className="text-teal-600 hover:text-white hover:bg-teal-600 rounded-md p-1"
-        >
-          Send a message
-        </Link>
-      </div>
+      </Link>
     </motion.div>
   );
 };
