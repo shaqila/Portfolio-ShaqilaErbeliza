@@ -23,34 +23,36 @@ const PortfolioComponent = () => {
           This showcase of my personal projects that I have worked on
         </div>
       </div>
-      <CardComponent
-        title="JobHunt"
-        tools="Reactjs, Tailwind"
-        description="This is my project from Sanbercode Bootcamp, I build the Job Vacancy Website with API that give the users to search the job vacancy."
-        thumbnail={jobHuntImg}
-        view={"https://jobhunt-withapi.vercel.app/"}
-      />
-      <CardComponent
-        title="InGigs"
-        tools="Reactjs, Tailwind"
-        description="This is a website for people who wants to exploring Indonesian Artists or Concerts, I build the frontend with React JS and Tailwind CSS."
-        thumbnail={inGigsImg}
-        view={"https://inigigs.my.id/"}
-      />
-      <CardComponent
-        title="E-Learning"
-        tools="Reactjs, MinimalUI"
-        description="Website E-Learning for students, teachers, and admin. I participated in this project on slicing the UI design from Figma to React JS with MinimalUI."
-        thumbnail={elearningImg}
-        view={elearningImg}
-      />
-      <CardComponent
-        title="Newsletter SignUp"
-        tools="Reactjs, Tailwind"
-        description="I made this project as part of challanges on FrontendMentor. This challanged me with basic form structure, validation, and submission."
-        thumbnail={newsImg}
-        view={"https://newsletter-signup-erbeliza.vercel.app/"}
-      />
+      <div className="mx-8 grid md:grid-cols-2 gap-8">
+        <CardComponent
+          title="JobHunt"
+          tools="Reactjs, Tailwind"
+          description="This is my final project for Sanbercode Bootcamp, I used React Js with Tailwind CSS to created the Job Vacancy Website with API that give the users to search the job vacancy."
+          thumbnail={jobHuntImg}
+          view={"https://jobhunt-withapi.vercel.app/"}
+        />
+        <CardComponent
+          title="InGigs"
+          tools="Reactjs, Tailwind"
+          description="This is a website that I created with React Js and Tailwind CSS. This website is created to give the information about Indonesian Artists or their Concerts. So that the users can know more about them and to find their concertmate."
+          thumbnail={inGigsImg}
+          view={"https://inigigs.my.id/"}
+        />
+        <CardComponent
+          title="E-Learning"
+          tools="Reactjs, MinimalUI"
+          description="This is a Website E-Learning for school. This website is created with my team for a final project. I participated in this website on slicing the UI design from Figma to React JS with MinimalUI."
+          thumbnail={elearningImg}
+          view={elearningImg}
+        />
+        <CardComponent
+          title="Newsletter SignUp"
+          tools="Reactjs, Tailwind"
+          description="I made this project as part of challanges on FrontendMentor. This challanged me with basic form structure, validation, and submission."
+          thumbnail={newsImg}
+          view={"https://newsletter-signup-erbeliza.vercel.app/"}
+        />
+      </div>
     </motion.section>
   );
 };
