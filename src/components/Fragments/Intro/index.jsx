@@ -66,10 +66,11 @@ const HeroComponent = () => {
         <div className="my-7 flex flex-col items-center justify-center space-y-5 md:flex-row md:justify-center md:items-center md:space-y-0 md:space-x-5 lg:justify-start">
           <a
             href="/resume_shaqilaerbeliza.pdf"
+            download
             target="_blank"
             className="text-slate-800 font-bold py-1 px-3 border-2 border-slate-800 rounded-lg hover:shadow-md hover:-translate-y-1 hover:bg-blue-100 hover:border-blue-100 duration-75"
           >
-            Resume
+            Download Resume
           </a>
           <div className="flex w-fit text-slate-800 bg-blue-100 font-bold py-2 px-5 rounded-lg space-x-4">
             {links.map(({ title, icon, url }) => (
