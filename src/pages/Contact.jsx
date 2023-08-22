@@ -40,7 +40,7 @@ export const ContactPage = () => {
       name: "Linkedin",
       icon: <TbBrandLinkedin size={40} />,
       description: "Shaqila Erbeliza",
-      link: "https://www.linkedin.com/in/shaqila-erbeliza-4838b8164/",
+      link: "https://www.linkedin.com/in/shaqila-erbeliza",
     },
   ];
   return (
