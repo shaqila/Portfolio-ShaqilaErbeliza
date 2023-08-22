@@ -26,7 +26,7 @@ const HeroComponent = () => {
     {
       title: "Linkedin",
       icon: <TbBrandLinkedin size={24} />,
-      url: "https://www.linkedin.com/in/shaqila-erbeliza-4838b8164/",
+      url: "https://www.linkedin.com/in/shaqila-erbeliza",
     },
     {
       title: "Instagram",
