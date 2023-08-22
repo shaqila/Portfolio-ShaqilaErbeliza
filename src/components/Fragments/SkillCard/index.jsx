@@ -1,5 +1,5 @@
 import reactIcon from "../../../assets/react.svg";
-import tailwindIcon from "../../../assets/tailwind-css-icon.webp";
+import tailwindIcon from "../../../assets/tailwind.svg";
 import nextIcon from "../../../assets/next-js-icon.png";
 import jsIcon from "../../../assets/js-icon.png";
 import htmlIcon from "../../../assets/html.png";
@@ -18,7 +18,7 @@ export const SkillCard = () => {
   const skill = [
     { title: "HTML", icon: htmlIcon, level: "Advanced" },
     { title: "CSS", icon: cssIcon, level: "Advanced" },
-    { title: "Javascript", icon: jsIcon, level: "Advanced" },
+    { title: "Javascript", icon: jsIcon, level: "Intermediate" },
     { title: "React Js", icon: reactIcon, level: "Intermediate" },
     { title: "Tailwind", icon: tailwindIcon, level: "Intermediate" },
     { title: "Bootstrap", icon: bootstrapIcon, level: "Intermediate" },
@@ -48,8 +48,12 @@ export const SkillCard = () => {
 
       <div className="mx-8 grid grid-cols-2 md:grid-cols-6 gap-8">
         {skill.map(({ title, icon, level }) => (
-          <div key={title} className="relative group">
-            <div className="w-[100px] h-[120px] rounded-xl overflow-hidden shadow-md bg-white flex flex-col justify-center items-center backdrop-filter backdrop-blur-sm bg-opacity-0 border border-gray-100 cursor-pointer hover:scale-105">
+          <motion.div
+            key={title}
+            className="flex flex-col items-center group relative"
+            whileHover={{ scale: 1.1 }}
+          >
+            <div className="w-[100px] h-[120px] rounded-xl overflow-hidden shadow-md bg-white flex flex-col justify-center items-center backdrop-filter backdrop-blur-sm bg-opacity-0 border border-gray-100 cursor-pointer">
               <img className="w-[50px] rounded p-2" src={icon} alt={title} />
               <div className="font-semibold text-slate-800 text-sm">
                 {title}
@@ -57,11 +61,11 @@ export const SkillCard = () => {
               <div className="font-light mt-2 text-slate-800 text-[12px]">
                 {level}
               </div>
-              <div className="absolute bg-blue-100 p-1 px-3 rounded-md transition-opacity duration-200 opacity-0 bottom-full left-1/2 transform -translate-x-1/2 group-hover:opacity-100">
-                HTML is the standard markup language for Web pages.
-              </div>
             </div>
-          </div>
+            <div className="group-hover:opacity-100 transition-opacity bg-gray-800 p-2 text-sm text-gray-100 rounded-md absolute left-1/2 -translate-x-1/2 opacity-0">
+              In your example the root parent div div1 has
+            </div>
+          </motion.div>
         ))}
       </div>
     </motion.section>

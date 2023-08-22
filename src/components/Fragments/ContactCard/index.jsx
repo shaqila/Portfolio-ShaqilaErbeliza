@@ -6,7 +6,6 @@ export const ContactCard = ({ icon, name, description, link }) => {
   return (
     <motion.div
       className="flex overflow-hidden items-center space-x-4 w-full p-4 rounded-xl backdrop-filter backdrop-blur-sm bg-opacity-0 border border-gray-100 shadow-md"
-      whileTap={{ scale: 0.9 }}
       whileHover={{ scale: 1.1 }}
     >
       <div>{icon}</div>
