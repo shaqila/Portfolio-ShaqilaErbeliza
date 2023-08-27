@@ -1,4 +1,5 @@
 import CardComponent from "../Card";
+import linksviewImg from "../../../assets/portfolio/linksview.png";
 import jobHuntImg from "../../../assets/portfolio/jobhunt.png";
 import inGigsImg from "../../../assets/portfolio/ingigs.png";
 import elearningImg from "../../../assets/portfolio/elearning.png";
@@ -24,6 +25,13 @@ const PortfolioComponent = () => {
         </div>
       </div>
       <div className="mx-8 grid md:grid-cols-2 gap-8">
+        <CardComponent
+          title="Links View"
+          tools="Reactjs, Sass"
+          description="This website is created with React Js and Sass to preview and shrinking URL. It will help people to scanning URL's information before surfing for their safety use."
+          thumbnail={linksviewImg}
+          view={"https://links-view.vercel.app/"}
+        />
         <CardComponent
           title="JobHunt"
           tools="Reactjs, Tailwind"
