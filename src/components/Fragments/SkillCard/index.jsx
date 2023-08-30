@@ -9,6 +9,7 @@ import laravelIcon from "../../../assets/laravel.png";
 import bootstrapIcon from "../../../assets/bootstrap_logo.svg.png";
 import gitIcon from "../../../assets/git.png";
 import muiIcon from "../../../assets/mui-logo.png";
+import sassIcon from "../../../assets/sass.png";
 import mysqlIcon from "../../../assets/mysql.svg";
 import { motion } from "framer-motion";
 import { SectionMotion } from "../../../common/motion/Section";
@@ -25,8 +26,9 @@ export const SkillCard = () => {
     { title: "PHP", icon: phpIcon, level: "Intermediate" },
     { title: "Laravel", icon: laravelIcon, level: "Intermediate" },
     { title: "MySQL", icon: mysqlIcon, level: "Intermediate" },
-    { title: "Git", icon: gitIcon, level: "Intermediate" },
+    // { title: "Git", icon: gitIcon, level: "Intermediate" },
     { title: "Material UI", icon: muiIcon, level: "Basic" },
+    { title: "Sass", icon: sassIcon, level: "Basic" },
     { title: "Next Js", icon: nextIcon, level: "Basic" },
   ];
 
