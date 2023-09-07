@@ -4,6 +4,7 @@ import jobHuntImg from "../../../assets/portfolio/jobhunt.png";
 import inGigsImg from "../../../assets/portfolio/ingigs.png";
 import elearningImg from "../../../assets/portfolio/elearning.png";
 import newsImg from "../../../assets/portfolio/newsletter.png";
+import adviceImg from "../../../assets/portfolio/advice.png";
 import { SectionMotion } from "../../../common/motion/Section";
 import { motion } from "framer-motion";
 
@@ -55,10 +56,17 @@ const PortfolioComponent = () => {
         />
         <CardComponent
           title="Newsletter SignUp"
-          tools="Reactjs, Tailwind"
+          tools="Javascript, Tailwind"
           description="I made this project as part of challanges on FrontendMentor. This challanged me with basic form structure, validation, and submission."
           thumbnail={newsImg}
           view={"https://newsletter-signup-erbeliza.vercel.app/"}
+        />
+        <CardComponent
+          title="Newsletter SignUp"
+          tools="Javascript, Tailwind"
+          description="I made this project as part of challanges on FrontendMentor. This makes me learned about API fetching on Javascript."
+          thumbnail={adviceImg}
+          view={"https://advice-generator-erbeliza.vercel.app/"}
         />
       </div>
     </motion.section>
