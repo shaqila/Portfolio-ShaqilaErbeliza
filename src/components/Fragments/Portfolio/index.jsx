@@ -3,6 +3,7 @@ import linksviewImg from "../../../assets/portfolio/linksview.png";
 import jobHuntImg from "../../../assets/portfolio/jobhunt.png";
 import inGigsImg from "../../../assets/portfolio/ingigs.png";
 import elearningImg from "../../../assets/portfolio/elearning.png";
+import manageImg from "../../../assets/portfolio/manage.png";
 import newsImg from "../../../assets/portfolio/newsletter.png";
 import adviceImg from "../../../assets/portfolio/advice.png";
 import { SectionMotion } from "../../../common/motion/Section";
@@ -55,6 +56,13 @@ const PortfolioComponent = () => {
           view={elearningImg}
         />
         <CardComponent
+          title="Manage - Landing Page"
+          tools="React Js, Sass"
+          description="I made this project as part of challanges on FrontendMentor. This makes me learned to create a landing page with SASS following the existing design."
+          thumbnail={manageImg}
+          view={"https://manage-erbeliza.vercel.app/"}
+        />
+        <CardComponent
           title="Newsletter SignUp"
           tools="Javascript, Tailwind"
           description="I made this project as part of challanges on FrontendMentor. This challanged me with basic form structure, validation, and submission."
@@ -62,7 +70,7 @@ const PortfolioComponent = () => {
           view={"https://newsletter-signup-erbeliza.vercel.app/"}
         />
         <CardComponent
-          title="Newsletter SignUp"
+          title="Advice Generator"
           tools="Javascript, Tailwind"
           description="I made this project as part of challanges on FrontendMentor. This makes me learned about API fetching on Javascript."
           thumbnail={adviceImg}
