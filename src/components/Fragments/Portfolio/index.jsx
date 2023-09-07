@@ -58,7 +58,9 @@ const PortfolioComponent = () => {
         <CardComponent
           title="Manage - Landing Page"
           tools="React Js, Sass"
-          description="I made this project as part of challanges on FrontendMentor. This makes me learned to create a landing page with SASS following the existing design."
+          description="I made this project as part of challanges on FrontendMentor. This makes me learned to create a landing page with SASS following the existing design.
+          
+          Note: This project is not completed yet with the responsive design."
           thumbnail={manageImg}
           view={"https://manage-erbeliza.vercel.app/"}
         />
